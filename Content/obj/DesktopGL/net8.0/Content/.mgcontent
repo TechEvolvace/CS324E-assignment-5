@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/meshes/KlangBigGear.fbm/pm0600_00_Body1.png</File>
+    <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/meshes/KlangBigGear.fbx</File>
+    <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/meshes/KlangSmallGear.fbm/pm0600_00_Body1.png</File>
+    <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/meshes/KlangSmallGear.fbx</File>
+    <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/Textures/pm0600_00_Body1.png</File>
+    <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/Textures/pm0600_00_Body1Id.png</File>
+    <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/Textures/pm0600_00_BodyEnv.png</File>
+    <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/Textures/pm0600_00_BodyNor.png</File>
+    <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/meshes/whirlipede.obj</File>
+    <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/Textures/whirlipede.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
