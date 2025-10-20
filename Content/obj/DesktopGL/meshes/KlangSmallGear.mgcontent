@@ -2,8 +2,8 @@
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>d:/Downloads/group_12_assignment5/Content/meshes/KlangSmallGear.fbx</SourceFile>
   <SourceTime>2025-10-19T21:20:18.3505521-05:00</SourceTime>
-  <DestFile>d:/Downloads/group_12_assignment5/Content/bin/DesktopGL/Content/meshes/KlangSmallGear.xnb</DestFile>
-  <DestTime>2025-10-19T21:34:09.2385953-05:00</DestTime>
+  <DestFile>d:/Downloads/group_12_assignment5/Content/bin/DesktopGL/meshes/KlangSmallGear.xnb</DestFile>
+  <DestTime>2025-10-19T21:33:52.862053-05:00</DestTime>
   <Importer>FbxImporter</Importer>
   <ImporterTime>2025-06-02T05:31:02-05:00</ImporterTime>
   <Processor>ModelProcessor</Processor>
@@ -66,7 +66,7 @@
   </Parameters>
   <Dependencies />
   <BuildAsset>
-    <string>d:/Downloads/group_12_assignment5/Content/bin/DesktopGL/Content/meshes/KlangSmallGear.fbm/pm0600_00_Body1_0.xnb</string>
+    <string>d:/Downloads/group_12_assignment5/Content/bin/DesktopGL/meshes/KlangSmallGear.fbm/pm0600_00_Body1_0.xnb</string>
   </BuildAsset>
   <BuildOutput />
 </PipelineBuildEvent>
