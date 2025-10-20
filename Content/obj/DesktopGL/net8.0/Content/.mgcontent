@@ -14,8 +14,10 @@
     <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/Textures/pm0600_00_BodyNor.png</File>
     <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/meshes/whirlipede.obj</File>
     <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/Textures/whirlipede.png</File>
+    <File>/Users/samueljsuh/Documents/CS324E-assignment-5/Content/meshes/tinker.obj</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -1,0 +1,41 @@
+PROJECT DESCRIPTION: CS 324E Assignment 5 - 3D Animation
+
+INTENDED ANIMATION SUMMARY
+
+    The project created a complex, continuously looping 3D scene demonstrating hierarchical movement and physics-based motion. The scene features three distinct objects:
+
+    Klang (Gear System): Rotates and translates to mimic a functioning mechanical system in the background.
+
+    Whirlipede (Rolling Insect): Rolls across the scene on the X-axis using smooth, accelerated motion.
+
+    Hoppip (Floating Creature): Floats, bobs vertically, and features a separate component (the Head) that rotates independently.
+
+    The animation loops indefinitely and utilizes a large coordinate system (up to +/-10000 units) to fit the scaled objects.
+
+    INCLUDED CLASSES AND FUNCTIONALITY
+
+    The project requires five primary C# class files:
+
+    Game1.cs: Initializes the camera and scene scale, loads all assets (3 models, 1 texture), and coordinates all Update() and Draw() calls. Uses View/Projection Matrix.
+    Gear.cs: (Assumed) Animates the Klang models (Big Gear and Small Gear). Uses Scale, Group Translation, and Independent Rotation. Assumed to use Lerp/Time-based motion.
+    Whirlipede.cs: Animates the rolling motion of the Whirlipede model. Uses Scale, Orientation Rotation, Rolling Rotation (Z-axis), and Translation. Uses Vector3.Lerp (with quadratic ease-in for smooth acceleration).
+    Hoppip.cs: Animates the Hoppip body's vertical float and horizontal movement. Uses Scale, Vertical Bobbing (Sin wave), and Translation. Vertical movement utilizes Sinusoidal function for smooth oscillation.
+    Head.cs: Animates the independent rotation of Hoppip's head. Uses Rotation (Y-axis). Uses direct time integration.
+
+UNEXPECTED CHALLENGES
+
+    Several unexpected technical challenges were resolved during implementation:
+
+    Content Importer (Extra Credit): The custom .obj model (Whirlipede/tinker) failed to compile initially due to MonoGame's inability to recognize the model importer on the macOS development environment. This was resolved by explicitly setting the asset to use the FbxImporter in Content.mgcb.
+
+    Scale Inconsistency: The Hoppip model was initially tiny (0.05x) compared to the large-scale Klang/Whirlipede models. This was fixed by adjusting the modelScale constant in Hoppip.cs to a suitable value (20f) and adjusting the Hoppip's translation and speed factors to be visible in the large scene.
+
+    Texture/Visibility: The Whirlipede model failed to display its texture (likely due to a missing .mtl file), and the Hoppip model was too dark against the black background. This was solved by manually loading the texture and explicitly enabling and boosting the EmissiveColor in the BasicEffect settings for both models to guarantee visibility.
+
+    Rotation Logic: The initial Hoppip and Whirlipede rotation logic caused them to spin vertically. This was corrected by changing the axis of continuous rotation to the Z-axis for the rolling effect on the Whirlipede model.
+
+GROUP MEMBER RESPONSIBILITIES
+
+    James Woo: Gear.cs class design and implementation, Game1.cs camera and scene initialization.
+    Samuel Suh: Whirlipede.cs class design and implementation (Scale, Lerp, Rolling Logic, Manual Texturing).
+    Phuc Dinh: Hoppip.cs and Head.cs class design and implementation (Hierarchical Transforms, Bobbing Logic).

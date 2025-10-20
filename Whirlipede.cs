@@ -29,14 +29,13 @@ namespace group_12_assignment5
             rotationAngle = 0f;
             currentTime = 0f;
             Scale = scale; 
-            texture = tex; 
+            texture = tex;
         }
 
         public void Update(GameTime gameTime)
         {
             float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-          
             float t = MathHelper.Clamp(currentTime / easeInDuration, 0f, 1f);
             float easedT = t * t; 
 
@@ -83,23 +82,21 @@ namespace group_12_assignment5
                     effect.View = view;
                     effect.Projection = projection;
                     
+                    // Manual Texture Assignment
                     effect.TextureEnabled = true;
                     effect.Texture = texture;
                     
+                    // Lighting setup
                     effect.EnableDefaultLighting();
                     effect.PreferPerPixelLighting = true;
-                    
                     effect.AmbientLightColor = new Vector3(0.4f, 0.4f, 0.4f);
-                    
                     effect.DirectionalLight0.Enabled = true;
                     effect.DirectionalLight0.Direction = new Vector3(-1, -1, -1);
                     effect.DirectionalLight0.DiffuseColor = new Vector3(0.8f, 0.8f, 0.8f);
                     effect.DirectionalLight0.SpecularColor = new Vector3(1.0f, 1.0f, 1.0f);
-
                     effect.DirectionalLight1.Enabled = true;
                     effect.DirectionalLight1.Direction = new Vector3(1, -1, 0);
                     effect.DirectionalLight1.DiffuseColor = new Vector3(0.5f, 0.5f, 0.5f);
-
                     effect.SpecularPower = 64f;
                 }
                 mesh.Draw();

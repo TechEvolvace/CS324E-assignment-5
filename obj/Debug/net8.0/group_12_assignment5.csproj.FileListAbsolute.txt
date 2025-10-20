@@ -85,3 +85,4 @@ d:/Downloads/group_12_assignment5/bin/Debug/net8.0/Content/meshes/KlangSmallGear
 /Users/samueljsuh/Documents/CS324E-assignment-5/obj/Debug/net8.0/ref/group_12_assignment5.dll
 /Users/samueljsuh/Documents/CS324E-assignment-5/bin/Debug/net8.0/Content/meshes/whirlipede.xnb
 /Users/samueljsuh/Documents/CS324E-assignment-5/bin/Debug/net8.0/Content/Textures/whirlipede.xnb
+/Users/samueljsuh/Documents/CS324E-assignment-5/bin/Debug/net8.0/Content/meshes/tinker.xnb
